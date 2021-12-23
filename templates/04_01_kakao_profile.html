@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Myeongjo:wght@400;800&family=Parisienne&display=swap" rel="stylesheet">
+
+    <title>카카오톡 프로필 화면</title>
+
+    <style>
+        /** {*/
+        /*    font-family: 'Parisienne', cursive;*/
+        /*    font-size: 25px;*/
+        /*    !*font-family: 'Jua', sans-serif;*!*/
+        /*}*/
+
+        .profileMain {
+            height: 800px;
+            width: 480px;
+            background-color: #99ccff;
+
+            flex-direction: column;
+
+            box-shadow: 0px 0px 3px 0px gray;
+
+
+        }
+
+        .profileSub1 {
+            width: auto;
+            height: 500px;
+            background-color: #F5B894;
+
+            overflow: auto;
+
+            flex-direction: column;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .profileSub1_comment {
+            font-family: 'Parisienne', cursive;
+            font-size: 25px;
+
+            color: azure;
+            text-align: center;
+            width: 360px;
+        }
+
+        .profile {
+            top: 425px;
+            left: 175px;
+
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+            overflow: hidden;
+
+            position: absolute;
+            /*text-align: center;*/
+
+
+        }
+
+        .profileImage {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+
+
+        }
+
+
+        .profileSub2 {
+            width: auto;
+            height: 300px;
+            background-color: #FFFFFF;
+
+            overflow: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profileSet_position{
+            width:  300px;
+            height: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .profileSet {
+            width: 75px;
+            height: 75px;
+            border-radius: 100px;
+            overflow: hidden;
+
+        }
+
+        .profileImageSet {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="profileMain">
+    <!--    <h1>여기는 메인 디비젼</h1>-->
+
+    <div class="profileSub1">
+        <div class="profileSub1_comment">
+            <h8>----</h8>
+            <p>Lucid Air has been named MotorTrend’s Car of the Year. Discover why it won this prestigious award.</p>
+        </div>
+    </div>
+
+    <div class="profile" style="background: #BDBDBD;">
+        <img class="profileImage" src="../templates/image/profile.JPG">
+    </div>
+
+
+    <div class="profileSub2">
+        <!--        <h2>여기는 서브2 디비젼</h2>-->
+
+        <div class="profileSet_position">
+            <div class="profileSet" >
+                <img class="profileImageSet" src="../templates/image/1.png">
+            </div>
+            <div class="profileSet">
+                <img class="profileImageSet" src="../templates/image/2.png">
+            </div>
+            <div class="profileSet">
+                <img class="profileImageSet" src="../templates/image/3.png">
+                여기여기여기
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
