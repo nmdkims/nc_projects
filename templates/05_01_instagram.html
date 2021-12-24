@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="vieport" content="width=device=width, initial=scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Pacifico&family=Parisienne&display=swap"
+          rel="stylesheet">
+
+    <title>카카오톡 프로필 화면</title>
+
+    <style>
+        /** {*/
+        /*    font-family: 'Parisienne', cursive;*/
+        /*    font-size: 25px;*/
+        /*    font-family: 'Jua', sans-serif;*/
+        /*}*/
+
+        .profileMain {
+            height: 800px;
+            width: auto;
+            background-color: #99ccff;
+
+            flex-direction: column;
+
+            box-shadow: 0px 0px 3px 0px gray;
+
+
+        }
+
+        .header {
+            width: auto;
+            height: 6.25%;
+            background-color: #FFFFFF;
+
+            overflow: auto;
+
+            display: flex;
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding-left: 1%;
+            padding-right: 1%;
+
+        }
+
+        .logoImage {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .iconImage {
+            width: auto;
+            height: 80%;
+            object-fit: cover;
+        }
+
+        .mainImage {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+
+
+        }
+
+        /*    여기까지 헤더   f*/
+
+        .storyContainer {
+            width: auto;
+            height: 12.5%;
+            background-color: #1FFFFF;
+
+            /*overflow: auto;*/
+
+            display: flex;
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-top: 1%;
+        }
+
+        .userContainer {
+            width: auto;
+            height: 6.25%;
+            background-color: #F11FFF;
+
+            /*overflow: auto;*/
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mainImageContainer {
+            width: auto;
+            height: 62.5%;
+
+            /*overflow: auto;*/
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 1%;
+        }
+
+        .subContainer5 {
+            width: auto;
+            height: 6.25%;
+            background-color: #BDBDBD;
+
+            overflow: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer {
+            width: auto;
+            height: 6.25%;
+            background-color: #FFFFFF;
+
+            overflow: auto;
+
+            display: flex;
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+
+        .textIconContainer {
+            width: auto;
+            height: 100%;
+
+            /*background-color: cornflowerblue;*/
+            text-align: center;
+
+            font-family: 'Jua', sans-serif;
+            font-size: 14px;
+
+        }
+
+        .textIconSet {
+            height: 70%;
+            width: 75px;
+
+            border-radius: 100px;
+            overflow: hidden;
+
+        }
+
+        .textIconImage {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #more {
+            width: 50%;
+            height: auto;
+
+            padding-top: 20%;
+            padding-left: 25%;
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="profileMain">
+    <div class=header>
+        <img class="iconImage" src="../templates/image/camera@3x.png">
+        <img class="logoImage" src="../templates/image/insta-logo.png">
+        <img class="iconImage" src="../templates/image/dm@3x.png">
+    </div>
+
+    <div class=storyContainer>
+
+        <div class="textIconContainer">
+            <div class="textIconSet">
+                <img class="textIconImage" src="../templates/image/main_image.png">
+            </div>
+            <p>카카오스토리</p>
+        </div>
+        <div class="textIconContainer">
+            <div class="textIconSet">
+                <img class="textIconImage" src="../templates/image/main_image.png">
+            </div>
+            <p>카카오스토리</p>
+        </div>
+        <div class="textIconContainer">
+            <div class="textIconSet">
+                <img class="textIconImage" src="../templates/image/main_image.png">
+            </div>
+            <p>카카오스토리</p>
+        </div>
+        <div class="textIconContainer">
+            <div class="textIconSet">
+                <img class="textIconImage" src="../templates/image/main_image.png">
+            </div>
+            <p>카카오스토리</p>
+        </div>
+        <div class="textIconContainer">
+            <div class="textIconSet">
+                <img class="textIconImage" src="../templates/image/main_image.png">
+            </div>
+            <p>카카오스토리</p>
+        </div>
+
+    </div>
+
+    <div class=userContainer>
+
+        <div class="textIconContainer">
+            <div class="textIconSet">
+                <img class="textIconImage" src="../templates/image/main_image.png">
+            </div>
+            <p>카카오스토리</p>
+        </div>
+        <div class="textIconSet">
+            <img class="iconImage" id="more" src="../templates/image/more@3x.png">
+        </div>
+
+    </div>
+
+    <div class=mainImageContainer>
+        <img class="mainImage" src="../templates/image/main_image.png">
+    </div>
+
+    <div class=subContainer5>
+
+    </div>
+
+    <div class=footer>
+        <img class="iconImage" src="../templates/image/home@3x.png">
+        <img class="iconImage" src="../templates/image/search@3x.png">
+        <img class="iconImage" src="../templates/image/trending@3x.png">
+        <img class="iconImage" src="../templates/image/like@3x.png">
+        <img class="iconImage" src="../templates/image/home@3x.png">
+    </div>
+
+
+</div>
+
+</body>
+</html>
